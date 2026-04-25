@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Lifecycle Redesign Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">S</span>
+      <div>
+        <strong>Email Lifecycle Redesign</strong>
+        <small>Strategy Prototype</small>
+      </div>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav">
+      <a href="#summary">Summary</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#gm">GM</a>
+      <a href="#af">AF</a>
+      <a href="#tests">Tests</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="summary">
+      <div class="eyebrow">From volume to relevance</div>
+      <h1>Redesigning email from a time-based drip into a behavior-driven lifecycle system.</h1>
+      <p class="hero-copy">
+        The current system sends too much, too early, with unclear intent. The future system should send fewer messages,
+        tied to user behavior, with distinct journeys for demand-side and supply-side members.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#architecture">View proposed model</a>
+        <a class="button secondary" href="#compare">See before vs after</a>
+      </div>
+      <div class="shift-card">
+        <div>
+          <span class="label danger">Current</span>
+          <h3>High-volume, time-based email</h3>
+          <p>29+ steps, fixed cadence, mixed messages, weak measurement.</p>
+        </div>
+        <div class="arrow">→</div>
+        <div>
+          <span class="label success">Future</span>
+          <h3>Lower-volume, behavior-driven lifecycle</h3>
+          <p>Intent-based programs, clear triggers, single-purpose messages, measurable outcomes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <span class="eyebrow">Executive Summary</span>
+        <h2>The email program needs an operating model reset.</h2>
+      </div>
+      <div class="summary-grid">
+        <div class="stat-card">
+          <strong>29+</strong>
+          <span>Email steps in the current welcome loop</span>
+        </div>
+        <div class="stat-card">
+          <strong>2x</strong>
+          <span>Emails per day during the first five days</span>
+        </div>
+        <div class="stat-card">
+          <strong>4</strong>
+          <span>Future lifecycle programs organized by intent</span>
+        </div>
+      </div>
+      <p class="section-copy">
+        The redesign should move the company away from blasting a sequence and toward guiding different users through
+        the moments that matter: trust, profile quality, engagement, and conversion.
+      </p>
+    </section>
+
+    <section class="section alt" id="problems">
+      <div class="section-header">
+        <span class="eyebrow">Current State Problems</span>
+        <h2>What is broken today</h2>
+      </div>
+      <div class="card-grid">
+        <button class="accordion-card">
+          <span>01</span>
+          <h3>Too much volume</h3>
+          <p>Users receive a dense early cadence that creates noise instead of momentum.</p>
+          <div class="detail">The first week should build confidence and activation, not fatigue.</div>
+        </button>
+        <button class="accordion-card">
+          <span>02</span>
+          <h3>No clear structure</h3>
+          <p>Welcome, onboarding, safety, engagement, and upsell all live in one loop.</p>
+          <div class="detail">This makes optimization difficult because every change affects the whole system.</div>
+        </button>
+        <button class="accordion-card">
+          <span>03</span>
+          <h3>Poor timing</h3>
+          <p>Messages are sent because time passed, not because a user needs them.</p>
+          <div class="detail">A user who already converted or disengaged may still receive generic lifecycle emails.</div>
+        </button>
+        <button class="accordion-card">
+          <span>04</span>
+          <h3>Mixed messaging</h3>
+          <p>Individual emails often carry multiple CTAs and competing objectives.</p>
+          <div class="detail">One message should have one job and one clear next step.</div>
+        </button>
+        <button class="accordion-card">
+          <span>05</span>
+          <h3>Wrong model for AF users</h3>
+          <p>Supply-side members receive messaging shaped like demand-side conversion.</p>
+          <div class="detail">AF success is quality, trust, engagement, and retention, not direct paid conversion.</div>
+        </button>
+        <button class="accordion-card">
+          <span>06</span>
+          <h3>Weak measurement</h3>
+          <p>The system over-relies on opens, clicks, and correlated revenue.</p>
+          <div class="detail">Each email needs a behavioral KPI tied to the action it is supposed to create.</div>
+        </button>
+      </div>
+    </section>
+
+    <section class="section" id="insights">
+      <div class="section-header">
+        <span class="eyebrow">Key Insights</span>
+        <h2>What actually drives performance</h2>
+      </div>
+      <div class="insight-list">
+        <div><strong>Timing beats volume.</strong><p>Messages perform best when they arrive at high-intent moments.</p></div>
+        <div><strong>Early trust matters.</strong><p>The first few touches shape whether users believe the platform is worth engaging with.</p></div>
+        <div><strong>User progress drives monetization.</strong><p>Profile completion, messages, and matches create the conditions for conversion.</p></div>
+        <div><strong>Premium brands send with restraint.</strong><p>Lower frequency and higher relevance protect brand equity.</p></div>
+        <div><strong>Behavior reveals intent.</strong><p>The system should respond to what users do, not what day they are on.</p></div>
+      </div>
+    </section>
+
+    <section class="section dark" id="architecture">
+      <div class="section-header">
+        <span class="eyebrow">Proposed Lifecycle Architecture</span>
+        <h2>Four programs, each with a clear job</h2>
+      </div>
+      <div class="architecture">
+        <article>
+          <span>01</span>
+          <h3>Welcome / Trust</h3>
+          <p>Introduce the brand, explain the value, establish credibility.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Onboarding / Profile</h3>
+          <p>Drive profile completion and quality through milestone-based prompts.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Engagement / Activity</h3>
+          <p>Respond to messages, matches, favorites, and inactivity signals.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Conversion / Monetization</h3>
+          <p>Serve upgrade prompts when the user has demonstrated intent.</p>
+        </article>
+      </div>
+      <div class="rules">
+        <span>System rules</span>
+        <p>Behavior over time • One job per message • Suppress redundant touches • Measure user outcomes</p>
+      </div>
+    </section>
+
+    <section class="section journeys" id="gm">
+      <div class="section-header">
+        <span class="eyebrow">GM Journey</span>
+        <h2>Demand-side journey: convert through value</h2>
+      </div>
+      <div class="timeline">
+        <div><span>1</span><h3>Trust</h3><p>Welcome, safety, platform differentiation.</p></div>
+        <div><span>2</span><h3>Activation</h3><p>Complete profile, receive signals, understand success.</p></div>
+        <div><span>3</span><h3>Engagement</h3><p>Messages, favorites, views, reply motivation.</p></div>
+        <div><span>4</span><h3>Conversion</h3><p>Upgrade when value is visible and friction is meaningful.</p></div>
+      </div>
+      <p class="principle">Principle: Sell outcomes, not access.</p>
+    </section>
+
+    <section class="section alt journeys" id="af">
+      <div class="section-header">
+        <span class="eyebrow">AF Journey</span>
+        <h2>Supply-side journey: build quality and trust</h2>
+      </div>
+      <div class="timeline">
+        <div><span>1</span><h3>Trust first</h3><p>Safety, legitimacy, control, platform standards.</p></div>
+        <div><span>2</span><h3>Profile quality</h3><p>Help members build profiles that attract the right attention.</p></div>
+        <div><span>3</span><h3>Engagement</h3><p>Encourage thoughtful responses and return behavior.</p></div>
+        <div><span>4</span><h3>Retention</h3><p>Keep high-quality supply active and confident.</p></div>
+      </div>
+      <p class="principle">Principle: AF success drives GM conversion indirectly.</p>
+    </section>
+
+    <section class="section" id="compare">
+      <div class="section-header">
+        <span class="eyebrow">Before vs After</span>
+        <h2>The system shift at a glance</h2>
+      </div>
+      <div class="toggle-wrap">
+        <button class="toggle active" data-view="before">Current State</button>
+        <button class="toggle" data-view="after">Future State</button>
+      </div>
+      <div class="comparison-panel" id="comparisonPanel">
+        <h3>Current State</h3>
+        <ul>
+          <li>One long time-based welcome loop</li>
+          <li>High early cadence and daily sends</li>
+          <li>Mixed intent and multiple CTAs</li>
+          <li>GM and AF treated too similarly</li>
+          <li>Success measured mainly by opens and clicks</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section alt" id="measurement">
+      <div class="section-header">
+        <span class="eyebrow">Measurement Plan</span>
+        <h2>Measure whether users do the thing</h2>
+      </div>
+      <div class="measure-grid">
+        <div><h3>Onboarding</h3><p>Profile completion rate, time to completion, verification completion.</p></div>
+        <div><h3>Engagement</h3><p>First message sent, reply rate, matches, return rate.</p></div>
+        <div><h3>Conversion</h3><p>Upgrade rate, time to conversion, revenue per user.</p></div>
+        <div><h3>System Health</h3><p>Unsubscribes, spam complaints, volume per user, suppression impact.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="tests">
+      <div class="section-header">
+        <span class="eyebrow">Week 1–2 Test Plan</span>
+        <h2>Start with the highest-signal changes</h2>
+      </div>
+      <div class="test-list">
+        <article><span>Test 1</span><h3>Reduce early cadence</h3><p>Move from 2 emails/day to 1 email/day in the first week.</p></article>
+        <article><span>Test 2</span><h3>Move AF safety earlier</h3><p>Shift trust and safety from late sequence to Step 2 or 3.</p></article>
+        <article><span>Test 3</span><h3>Behavior-trigger profile prompts</h3><p>Only send profile emails when the relevant step is incomplete.</p></article>
+        <article><span>Test 4</span><h3>Remove AF upgrade messaging</h3><p>Eliminate direct conversion asks from the AF welcome journey.</p></article>
+      </div>
+    </section>
+
+    <section class="section dark" id="ai">
+      <div class="section-header">
+        <span class="eyebrow">AI Build Workflow</span>
+        <h2>Where ChatGPT, Claude, and Claude Code fit</h2>
+      </div>
+      <div class="ai-grid">
+        <div><h3>ChatGPT</h3><p>Strategy, synthesis, executive narrative, UX structure, prototype direction.</p></div>
+        <div><h3>Claude</h3><p>Long-form expansion, email copy variations, journey details, documentation polish.</p></div>
+        <div><h3>Claude Code</h3><p>Iterating the codebase, making precise edits, adding UI interactions, scaling beyond one page.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Email Lifecycle Redesign Prototype · Internal Strategy Artifact</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
